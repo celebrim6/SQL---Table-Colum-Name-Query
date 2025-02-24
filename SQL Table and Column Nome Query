@@ -8,7 +8,7 @@ SELECT
 FROM SYS.COLUMNS SC
 INNER JOIN SYS.TABLES ST ON ST.OBJECT_ID = SC.OBJECT_ID
 INNER JOIN SYS.PARTITIONS PT ON PT.OBJECT_ID = ST.OBJECT_ID
-WHERE SC.NAME LIKE '%Find%'     /* <-- User '%Find%' to find your TableName or Colum in a database */
+WHERE SC.NAME LIKE '%Find%'     /* <-- Use '%Find%' to find your TableName or Colum in a database */
 GROUP BY
 	ST.NAME,
 	SC.NAME
